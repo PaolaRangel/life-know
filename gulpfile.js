@@ -12,7 +12,7 @@ gulp.task('sass', function(){
             includePaths: ['sass']
         }))
         .pipe(gulp.dest('./css'));
-});
+}); 
 
 gulp.task('serve',function(){
     browserSync.init(['./css/*.css','js/*js','views/*.php'],{
