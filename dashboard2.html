@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    
+    <button class="btn btn-primary" style="padding: 4px" data-pushbar-target="mypushbar1">
+        <i class="fas fa-ellipsis-h"></i>
+    </button>
+    
+        <div data-pushbar-id="mypushbar1" class="pushbar from_left">
+          
+                <ul style="list-style: none">
+                    <a id="doc" href="#">
+                        <li>Pacientes</li>
+                    </a>
+                    <a id="uno" href="#">   
+                            <li><i class="fas fa-sign-out-alt"></i> Salir</li>
+                    </a>
+                </ul>
+                
+            </div>
+          
+          
+            <div class="pushbar_main_content">
+                
+                <div id="form-doc" class="doctor" >
+                    <div class="continer">
+                        <div class="row justify-content-center">
+                            <div class="col-5">
+                                <div class="card" style="width: 25rem;">
+                                    <img class="card-img-top img-fluid" src="http://resize1-doctissimocom.ladmedia.fr/r/940,,force/crop/940,470/img/var/doctissimo/storage/images/common/salud/consulta-medica/medicos/los-derechos-del-paciente/237517-1-esl-ES/conoces-tus-derechos-como-paciente.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <for id="alta-doc" action="">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                <label for="inputEmail4">Paciente</label>
+                                                <input id="paciente" type="text" class="form-control" id="inputEmail4" placeholder="Nombre Completo">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                <label for="inputPassword4">Correo Familiares</label>
+                                                <input type="email" class="form-control" id="pass" placeholder="Correo">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputAddress">Situación</label>
+                                                <input type="text" class="form-control" id="estado" placeholder="Último Estado">
+                                            </div>
+                                            
+                                            <button id="guardar" class="btn btn-primary">Guardar</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          
+         
+            </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/barjs.js"></script>
+    <script type="text/javascript">
+        var pushbar = new Pushbar({
+            blur:true,
+            overlay:true,
+        });
+    </script>
+    <script src="js/dash.js"></script>
+
+</body>
+</html>

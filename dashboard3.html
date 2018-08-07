@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    
+    <button class="btn btn-primary" style="padding: 4px" data-pushbar-target="mypushbar1">
+        <i class="fas fa-ellipsis-h"></i>
+    </button>
+    
+        <div data-pushbar-id="mypushbar1" class="pushbar from_left">
+          
+                <ul style="list-style: none">
+                    <a id="doc" href="#">
+                        <li>Pacientes</li>
+                    </a>
+                </ul>
+                
+            </div>
+          
+          
+            <div class="pushbar_main_content">
+                
+                <div id="form-doc" class="doctor" >
+                    <div class="continer">
+                        <div class="row justify-content-center">
+                            <div class="col-5">
+                                    <table class="table">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Nombre</th>
+                                                <th scope="col">Estado</th>
+                                                <th scope="col">Habitación</th>
+                                                <th scope="col">Ultima Actualización</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>testPaciente</td>
+                                                <td>En operación</td>
+                                                <td>201</td>
+                                                <td>06/08/2018 7:14 hrs</td>
+                                              </tr>
+                                              <th scope="row">2</th>
+                                              <td>testPaciente</td>
+                                              <td>Rehabilitación</td>
+                                              <td>101</td>
+                                              <td>06/08/2018 7:50 hrs</td>
+              
+                                              <tr>
+                                              </tr>
+                                              <tr>
+                                                <!-- <th scope="row">3</th> -->
+                                              </tr>
+                                              <tr>
+                                                <!-- <th scope="row">3</th> -->
+                                            </tr>
+                                            </tbody>
+                                          </table>  
+                                </div>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+          
+         
+            </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/barjs.js"></script>
+    <script type="text/javascript">
+        var pushbar = new Pushbar({
+            blur:true,
+            overlay:true,
+        });
+    </script>
+    <script src="js/dash.js"></script>
+
+</body>
+</html>

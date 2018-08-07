@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    
+    <button class="btn btn-primary" style="padding: 4px" data-pushbar-target="mypushbar1">
+        <i class="fas fa-ellipsis-h"></i>
+    </button>
+    
+        <div data-pushbar-id="mypushbar1" class="pushbar from_left">
+          
+                <ul style="list-style: none">
+                    <a id="doc" href="#">
+                        <li><i class="fas fa-user-md"></i> Doctores</li>
+                    </a>
+                    <a id="uno" href="#">   
+                        <li><i class="fas fa-sign-out-alt"></i> Salir</li>
+                    </a>
+                </ul>
+                
+            </div>
+          
+          
+            <div class="pushbar_main_content">
+                
+                <div id="form-doc" class="doctor" >
+                    <div class="continer">
+                        <div class="row justify-content-center">
+                            <div class="col-5">
+                                <div class="card" style="width: 25rem;">
+                                    <img class="card-img-top img-fluid" src="http://allegra.global/doctor-help/medico/images/img-doctores.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <for id="alta-doc" action="">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                <label for="inputEmail4">Correo</label>
+                                                <input id="correo" type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                <label for="inputPassword4">Password</label>
+                                                <input type="password" class="form-control" id="pass" placeholder="Password">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputAddress">Usuario</label>
+                                                <input type="text" class="form-control" id="usuario" placeholder="Nombre completo">
+                                            </div>
+                                            
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                <label for="inputCity">Especialidad</label>
+                                                <input id="especialidad" type="text" class="form-control" id="inputCity">
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                <label for="inputState">Elegir</label>
+                                                <select id="elegir" class="form-control">
+                                                    <option selected>Elegir...</option>
+                                                    <option>Doctor</option>
+                                                    <option>Enfermera</option>
+
+                                                </select>
+                                            </div>
+                                                    <div class="form-group col-md-2">
+                                                        <label for="inputZip">Edad</label>
+                                                        <input id="edad" type="text" class="form-control" id="inputZip">
+                                                    </div>
+                                                
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                <label class="form-check-label" for="gridCheck">
+                                                    Check me out
+                                                </label>
+                                                </div>
+                                            </div>
+                                            <button id="guardar" class="btn btn-primary">Guardar</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          
+         
+            </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/barjs.js"></script>
+    <script type="text/javascript">
+        var pushbar = new Pushbar({
+            blur:true,
+            overlay:true,
+        });
+    </script>
+    <script src="js/dash.js"></script>
+
+</body>
+</html>

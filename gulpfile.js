@@ -14,11 +14,11 @@ gulp.task('sass', function(){
         .pipe(gulp.dest('./css'));
 }); 
 
-gulp.task('serve',function(){
-    browserSync.init(['./css/*.css','js/*js','views/*.php'],{
-        proxy:
-             "localhost/Unitec/Apliacion-distribuida/Proyecto/",
-             http: true
+gulp.task('serve', ['sass'], function() {
+    browserSync.init(["./css/*.css", "./js/*.js", "./*.html"], {
+      server: {
+        baseDir: './'
+      }
     });
 });
 
